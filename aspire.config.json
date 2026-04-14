@@ -1,5 +1,6 @@
 {
   "appHost": {
     "path": "AcrLoginTest.AppHost/AcrLoginTest.AppHost.csproj"
-  }
+  },
+  "language": "csharp"
 }
