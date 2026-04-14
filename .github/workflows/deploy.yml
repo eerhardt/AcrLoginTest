@@ -38,7 +38,8 @@ jobs:
           subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
 
       - name: Deploy with Aspire
-        run: aspire deploy --non-interactive --environment ${{ vars.AZURE_ENV_NAME }}
+        run: aspire deploy --log-level debug --non-interactive --environment ${{ vars.AZURE_ENV_NAME }}
         env:
           Azure__SubscriptionId: ${{ vars.AZURE_SUBSCRIPTION_ID }}
-          Azure__Location: ${{ vars.AZURE_LOCATION }}
+          Azure__Location: southafricanorth
+          Azure__ResourceGroup: rg-southafricanorth
