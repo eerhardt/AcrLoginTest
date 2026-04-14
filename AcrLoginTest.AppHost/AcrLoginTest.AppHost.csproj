@@ -1,8 +1,4 @@
-<Project Sdk="Aspire.AppHost.Sdk/13.3.0-pr.15711.g9bce278b">
-
-  <ItemGroup>
-    <ProjectReference Include="..\AcrLoginTest.Api\AcrLoginTest.Api.csproj" />
-  </ItemGroup>
+﻿<Project Sdk="Aspire.AppHost.Sdk/13.3.0-preview.1.26213.4">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -11,5 +7,13 @@
     <Nullable>enable</Nullable>
     <UserSecretsId>c789c2b2-5ee0-480c-b241-c331bf3548d5</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.Azure.AppContainers" Version="13.3.0-preview.1.26213.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcrLoginTest.Api\AcrLoginTest.Api.csproj" />
+  </ItemGroup>
 
 </Project>
